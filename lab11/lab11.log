@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.15)  15 MAY 2017 01:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.15)  16 MAY 2017 16:10
 entering extended mode
 **./lab11.tex
 (lab11.tex
@@ -1366,30 +1366,30 @@ LaTeX Font Warning: Font shape `T2A/cmr/bx/n' in size <20> not available
 
 {C:/Users/Huy Hung/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 [1]
-Package pgfplots info on input line 184: Using 'lua backend=false' for axis: xm
+Package pgfplots info on input line 186: Using 'lua backend=false' for axis: xm
 ode=log unsupported (yet).
 PGFPlots: reading {data/FreqResponse/BodePlot.dat}
 
-Overfull \hbox (2.83557pt too wide) in paragraph at lines 187--188
+Overfull \hbox (2.83557pt too wide) in paragraph at lines 189--190
  [][] 
  []
 
 
-Overfull \hbox (5.22096pt too wide) in paragraph at lines 172--204
+Overfull \hbox (5.22096pt too wide) in paragraph at lines 174--206
 []| $[]$   $[]$
  []
 
 PGFPlots: reading {data/ex1/TransPlot-x.dat}
 PGFPlots: reading {data/ex1/TransPlot-u.dat}
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 207--240
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 209--242
 []$[]$ $[]$
  []
 
 PGFPlots: reading {data/ex1/TransPlot-v.dat}
 PGFPlots: reading {data/ex1/TransPlot-f.dat}
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 241--274
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 243--276
 []$[]$ $[]$ 
  []
 
@@ -1456,11 +1456,11 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  26920 strings out of 493333
  664711 string characters out of 3139183
- 2314108 words of memory out of 3000000
+ 2314058 words of memory out of 3000000
  29943 multiletter control sequences out of 15000+200000
  18636 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,21n,103p,1014b,2324s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,21n,103p,1015b,2326s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600
 \labx1728.pk> <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh
 -t2a\dpi600\larm0800.pk> <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\l
@@ -1476,9 +1476,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX
 /type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb>
-Output written on lab11.pdf (9 pages, 1148360 bytes).
+Output written on lab11.pdf (9 pages, 1148005 bytes).
 PDF statistics:
- 329 PDF objects out of 1000 (max. 8388607)
+ 327 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

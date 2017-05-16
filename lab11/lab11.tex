@@ -82,7 +82,7 @@
 \end{titlepage}	
 
 
-\section{Задание}
+\section*{\centering Задание}
 \textbf{Целью работы} является изучение математических моделей и исследование характеристик исполнительного устройства, построенного на основе пьезоэлектрического двигателя (ПД) микроперемещений. \par
 Необходимо построить схему ПД, которая изображена на рисунке 1 и провести математическое моделирование при различных значениях параметров системы.
 \begin{figure}[h!]
@@ -167,7 +167,9 @@
 \end{table}
 
 \newpage
+\begin{center}
 \section{Анализ пьезоэлектрического двигателя}
+\end{center}
 
 \hspace*{-\parindent}%
 \begin{minipage}{0.4\textwidth}
@@ -209,7 +211,7 @@
         \begin{tikzpicture} 
             \begin{axis} [
                 width = 0.9\textwidth,
-                ylabel = {$\hat{x}$},
+                ylabel = {$\hat{x}$, м},
                 xlabel = {$t$, c},
                 legend pos=south east,
                 grid = major,
@@ -225,7 +227,7 @@
         \begin{tikzpicture} 
             \begin{axis} [
                 width = 0.9\textwidth,
-                ylabel = {$\hat{U}_p$},
+                ylabel = {$\hat{U}_p$, В},
                 xlabel = {$t$, c},
                 legend pos=south east,
                 grid = major,
@@ -243,7 +245,7 @@
         \begin{tikzpicture} 
             \begin{axis} [
                 width = 0.9\textwidth,
-                ylabel = {$\hat{V}$},
+                ylabel = {$\hat{V}$, м/с},
                 xlabel = {$t$, c},
                 legend pos=south east,
                 grid = major,
@@ -259,7 +261,7 @@
         \begin{tikzpicture} 
             \begin{axis} [
                 width = 0.9\textwidth,
-                ylabel = {$\hat{F}$},
+                ylabel = {$\hat{F}$, Н},
                 xlabel = {$t$, c},
                 legend pos=south east,
                 grid = major,
@@ -275,7 +277,9 @@
 \end{figure}
 
 \newpage
-\section{Исследование вленяния массы $m$ нагрузки на вид переходных процессов}
+\begin{center}
+\section{ Исследование вленяния массы $m$ нагрузки на вид переходных процессов}
+\end{center}
 Иземеняя массу нагрузки в пределах $[0.5m, 1.5m]$ получим различные виды переходных процессов с различными значениями преререгулирования $\sigma$, времени переходных процессов $t_\text{п}$, и установившегося значения выходного сигнала $x_\text{уст}$. Полученные значеня представлены в таблице 2.
 \begin{table}[h!]
     \centering
@@ -305,7 +309,7 @@
             \begin{axis} [
                 width = 0.9\textwidth,
                 height = 6cm,
-                ylabel = {$\hat{x}$},
+                ylabel = {$\hat{x}$, м},
                 xlabel = {$t$, c},
                 legend pos=south east,
                 grid = major,
@@ -331,7 +335,7 @@
             \begin{axis} [
                 width = 0.9\textwidth,
                 height = 6cm,
-                ylabel = {$\hat{U}_p$},
+                ylabel = {$\hat{U}_p$, В},
                 xlabel = {$t$, c},
                 legend pos=south east,
                 grid = major,
@@ -351,7 +355,7 @@
             \begin{axis} [
                 width = 0.9\textwidth,
                 height = 6cm,
-                ylabel = {$\hat{V}$},
+                ylabel = {$\hat{V}$, м/с},
                 xlabel = {$t$, c},
                 legend pos=south east,
                 grid = major,
@@ -375,7 +379,7 @@
             \begin{axis} [
                 width = 0.9\textwidth,
                 height = 6cm,
-                ylabel = {$\hat{F}$},
+                ylabel = {$\hat{F}$, Н},
                 xlabel = {$t$, c},
                 legend pos=south east,
                 grid = major,
@@ -396,7 +400,11 @@
 \end{figure}
 
 \newpage
-\section{Исследование влияния $T_u$ на вид переходных процессов}
+\begin{center}
+	
+
+\section{ Исследование влияния $T_u$ на вид переходных процессов}
+\end{center}
 Иземеняя время $T_u$ получим различные виды переходных процессов с различными значениями преререгулирования $\sigma$, времени переходных процессов $t_\text{п}$, и установившегося значения выходного сигнала $x_\text{уст}$. Полученные значеня представлены в таблице 3.
 \begin{table}[h!]
     \centering
@@ -424,7 +432,7 @@
             \begin{axis} [
                 width = 0.9\textwidth,
                 height = 6cm,
-                ylabel = {$\hat{x}$},
+                ylabel = {$\hat{x}$, м},
                 xlabel = {$t$, c},
                 legend pos=south east,
                 grid = major,
@@ -449,7 +457,7 @@
             \begin{axis} [
                 width = 0.9\textwidth,
                 height = 6cm,
-                ylabel = {$\hat{U}_p$},
+                ylabel = {$\hat{U}_p$, В},
                 xlabel = {$t$, c},
                 legend pos=south east,
                 grid = major,
@@ -472,7 +480,7 @@
             \begin{axis} [
                 width = 0.9\textwidth,
                 height = 6cm,
-                ylabel = {$\hat{V}$},
+                ylabel = {$\hat{V}$, м/с},
                 xlabel = {$t$, c},
                 legend pos=south east,
                 grid = major,
@@ -495,7 +503,7 @@
             \begin{axis} [
                 width = 0.9\textwidth,
                 height = 6cm,
-                ylabel = {$\hat{F}$},
+                ylabel = {$\hat{F}$, Н},
                 xlabel = {$t$, c},
                 legend pos=south east,
                 grid = major,
@@ -515,7 +523,11 @@
 \end{figure}
 
 \newpage
-\section{Исследование влияния коэффициентка упрогости $C_p$ при наличии внешних возмущений $F_B$}
+\begin{center}
+	
+
+\section{ Исследование влияния коэффициентка упрогости $C_p$ при наличии внешних возмущений $F_B$}
+\end{center}
 Исследуем поведение системы, варьируя $C_p$, при выключенном питании $U = 0$ и приложенном воздействии $F_B = 100$. На рисунке 6 представлены полученные в результате математического моделирования переходные процессы при различных $C_p$.
 
 \begin{figure}[h!]
@@ -525,7 +537,7 @@
             \begin{axis} [
                 width = 0.9\textwidth,
                 height = 6cm,
-                ylabel = {$\hat{x}$},
+                ylabel = {$\hat{x}$, м},
                 xlabel = {$t$, c},
                 legend pos=south east,
                 grid = major,
@@ -550,7 +562,7 @@
             \begin{axis} [
                 width = 0.9\textwidth,
                 height = 6cm,
-                ylabel = {$\hat{V}$},
+                ylabel = {$\hat{V}$, м/с},
                 xlabel = {$t$, c},
                 legend pos=south east,
                 grid = major,
