@@ -96,7 +96,7 @@
         	Тип звена & Передаточная функция \\ [0.5cm]  \hline
         	Апериодическое 1-го порядка & $\displaystyle\frac{k}{Ts + 1}$ \\ [0.5cm]  \hline
         	Дифференцирующее с замедлением & $\displaystyle\frac{ks}{Ts+1}$ \\ [0.5cm]  \hline
-        	Интегрирующее с замедлением & $\displaystyle\frac{k}{s(Ts + 1)}$ \\ [0.5cm] \hline
+        	Консервативное & $\displaystyle\frac{k}{T^2 s^2+ 1}$ \\ [0.5cm] \hline
     	\end{tabular}
     \end{threeparttable} 
 \end{table}
@@ -321,31 +321,34 @@ W(j\omega) = \frac{k\omega j}{1+T \omega j}
         \end{tikzpicture}
         \caption{График ЛАФЧХ}
     \end{subfigure}
-    \caption{Частотные характеристикидифференцирующего звена с замедлением}
+    \caption{Частотные характеристики дифференцирующего звена с замедлением}
 \end{figure}
 
 \newpage
 \begin{center}
-	\section{Исследование интегрирующего с замедлением }
+	\section{Исследование консервативного }
 \end{center}
 
 \par 
 Передаточная функция исследуемого звена:
 \begin{align}
-	W(s)=\frac{k}{Ts^2 + s}
+	W(s)=\frac{k}{T^2s^2 + 1}
 \end{align}
 \par 
 Найдём выражения для АЧХ и ФЧХ:
 \begin{align}
-	W(j\omega) & = \frac{k}{j\omega(Tj\omega+1)}
+ W(j\omega) & = \frac{K}{1 - T^2\omega^2}
 \end{align}
 
 \begin{align}
-	A(\omega) & = \frac{k}{\omega(T^2\omega^2+1 )}
+ A(\omega) & = \frac{K}{|1 - T^2\omega^2|}
 \end{align}
 
 \begin{align}
-\psi(\omega) & = -\pi/2-arctg(\omega T)
+\psi(\omega) & = \begin{cases}
+0, & \omega < \frac{1}{T} \\
+-180, & \omega > \frac{1}{T}
+\end{cases}
 \end{align}
 
 \par 
@@ -356,12 +359,13 @@ W(j\omega) = \frac{k\omega j}{1+T \omega j}
     \begin{threeparttable}
         \caption{Полученные данные} \label{tab:perflogcross}
         \pgfplotstabletypeset[]{data/data3.txt}
+         
     \end{threeparttable}
 \end{table}
 
 \newpage
 \par 
-На рисунке 3 представлены частотные характеристики интегрирующего с замедлением.
+На рисунке 3 представлены частотные характеристики консервативного .
 
 \begin{figure}[h!]
     \begin{subfigure}{0.5\textwidth}
@@ -371,12 +375,13 @@ W(j\omega) = \frac{k\omega j}{1+T \omega j}
                     width = 0.9\textwidth,
                     xlabel = {$\omega$, 1/c},
                     ylabel = {$L_m$, дБ},
-                    ytick = { 13.94, 0, -10, -20, -30, -46.06 },
+                    ytick = { 14.07, 22.64, -10, -20, -25.93 },
                     extra x ticks = {0.2},
                     xtick = {10e-3, 10e-1, 10e+0, 10e+1}
                 ]
-                \addplot table [x={w}, y={L}] {data/data3.txt};
-                \draw (1, 13.94) -- (10, -6.06) -- (100, -46.06);
+                \addplot table [x={w}, y={L}] {data/data3.1.txt};
+                \addplot table [x={w}, y={L}] {data/data3.2.txt};
+                \draw (1, 13.94) -- (10, 13.94) -- (100, -25.93);
             \end{semilogxaxis}
         \end{tikzpicture}
         \caption{График ЛАЧХ и асимптотическая ЛАЧХ}
@@ -388,9 +393,10 @@ W(j\omega) = \frac{k\omega j}{1+T \omega j}
                     width = 0.9\textwidth,
                     xlabel = {$\omega$, 1/c},
                     ylabel = {$\psi$, градусы},
-                    ytick = { 95.71, 120, 140, 160, 174.29 }
+                    ytick = { 0, 120, 140, 160, -180 }
                 ]
-                \addplot table [x={w}, y={psi}] {data/data3.txt};
+                \addplot table [x={w}, y={psi}] {data/data3.1.txt};
+                 \addplot table [x={w}, y={psi}] {data/data3.2.txt};
             \end{semilogxaxis}
         \end{tikzpicture}
         \caption{График ЛФЧХ}
@@ -406,7 +412,8 @@ W(j\omega) = \frac{k\omega j}{1+T \omega j}
                     xlabel = {$A(\omega)$},
                     ylabel = {$\psi$, градусы},
                 ]
-                \addplot table [x={psi}, y={A}] {data/data3.txt};
+                \addplot table [x={psi}, y={A}] {data/data3.1.txt};
+                \addplot table [x={psi}, y={A}] {data/data3.2.txt};
             \end{polaraxis}
         \end{tikzpicture}
         \caption{График АФЧХ}
@@ -419,12 +426,13 @@ W(j\omega) = \frac{k\omega j}{1+T \omega j}
                     xlabel = {$L_m$, дБ},
                     ylabel = {$\psi$, градусы},
                 ]
-                \addplot table [x={psi}, y={L}] {data/data3.txt};
+                \addplot table [x={psi}, y={L}] {data/data3.1.txt};
+                 \addplot table [x={psi}, y={L}] {data/data3.2.txt};
             \end{polaraxis}
         \end{tikzpicture}
         \caption{График ЛАФЧХ}
     \end{subfigure}
-    \caption{Частотные характеристики интегрирующего с замедлением}
+    \caption{Частотные характеристики консервативного }
 \end{figure}
 
 \newpage
@@ -432,5 +440,5 @@ W(j\omega) = \frac{k\omega j}{1+T \omega j}
 	\section*{Вывод}
 \end{center}
 \par 
-В лабораторной работе были исследованы следующие элементарные звенья: апериодическое 1-го порядка, дифференцирующее с замедлением и интегрирующее с замедлением. Были найдены частотные характеристики, а также построены графо-аналитическим методом асимптотические ЛАЧХ, к которым сходятся полученные экспериментально графики.
+В лабораторной работе были исследованы следующие элементарные звенья: апериодическое 1-го порядка, дифференцирующее с замедлением и консервативное звено . Были найдены частотные характеристики, а также построены графо-аналитическим методом асимптотические ЛАЧХ, к которым сходятся полученные экспериментально графики.
 \end{document}

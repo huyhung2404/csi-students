@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.15)  17 MAY 2017 13:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.15)  17 MAY 2017 20:12
 entering extended mode
 **./lab_9.tex
 (lab_9.tex
@@ -1437,21 +1437,25 @@ Overfull \hbox (2.61049pt too wide) in paragraph at lines 298--324
 [7] [8]
 PGFPlots: reading {data/data3.txt}
  [9]
-Package pgfplots info on input line 377: Using 'lua backend=false' for axis: xm
+Package pgfplots info on input line 381: Using 'lua backend=false' for axis: xm
 ode=log unsupported (yet).
-PGFPlots: reading {data/data3.txt}
-Package pgfplots info on input line 392: Using 'lua backend=false' for axis: xm
+PGFPlots: reading {data/data3.1.txt}
+PGFPlots: reading {data/data3.2.txt}
+Package pgfplots info on input line 397: Using 'lua backend=false' for axis: xm
 ode=log unsupported (yet).
-PGFPlots: reading {data/data3.txt}
+PGFPlots: reading {data/data3.1.txt}
+PGFPlots: reading {data/data3.2.txt}
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 367--398
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 371--404
 []$[]$ $[]$ 
  []
 
-PGFPlots: reading {data/data3.txt}
-PGFPlots: reading {data/data3.txt}
+PGFPlots: reading {data/data3.1.txt}
+PGFPlots: reading {data/data3.2.txt}
+PGFPlots: reading {data/data3.1.txt}
+PGFPlots: reading {data/data3.2.txt}
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 401--427
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 407--435
 []$[]$ $[]$ 
  []
 
@@ -1465,13 +1469,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26844 strings out of 493333
- 664859 string characters out of 3139183
+ 26849 strings out of 493333
+ 664933 string characters out of 3139183
  870286 words of memory out of 3000000
- 29877 multiletter control sequences out of 15000+200000
+ 29878 multiletter control sequences out of 15000+200000
  21893 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,14n,104p,871b,2169s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,14n,104p,872b,2169s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600
 \larm1095.pk> <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh
 -t2a\dpi600\labx1440.pk> <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\l
@@ -1483,16 +1487,17 @@ Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1440.pk>
  <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\l
 arm0700.pk> <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t
 2a\dpi600\labx1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi1
-2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsy8.pfb>
-Output written on lab_9.pdf (12 pages, 226886 bytes).
+cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy8.pfb>
+Output written on lab_9.pdf (12 pages, 229955 bytes).
 PDF statistics:
- 378 PDF objects out of 1000 (max. 8388607)
+ 383 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
