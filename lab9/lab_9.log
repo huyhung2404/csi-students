@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.15)  17 MAY 2017 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.15)  17 MAY 2017 13:31
 entering extended mode
 **./lab_9.tex
 (lab_9.tex
@@ -1394,7 +1394,7 @@ PGFPlots: reading {data/data1.txt}
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2]
+[2] [3]
 Package pgfplots info on input line 169: Using 'lua backend=false' for axis: xm
 ode=log unsupported (yet).
 PGFPlots: reading {data/data1.txt}
@@ -1413,10 +1413,7 @@ Overfull \hbox (2.61049pt too wide) in paragraph at lines 194--220
 []$[]$ $[]$ 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[3] [4] [5]
+[4] [5]
 PGFPlots: reading {data/data2.txt}
  [6]
 Package pgfplots info on input line 274: Using 'lua backend=false' for axis: xm
@@ -1470,7 +1467,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  26844 strings out of 493333
  664859 string characters out of 3139183
- 872286 words of memory out of 3000000
+ 870286 words of memory out of 3000000
  29877 multiletter control sequences out of 15000+200000
  21893 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1493,7 +1490,7 @@ m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb>
-Output written on lab_9.pdf (12 pages, 226789 bytes).
+Output written on lab_9.pdf (12 pages, 226886 bytes).
 PDF statistics:
  378 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
