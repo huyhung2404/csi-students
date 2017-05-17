@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.15)  16 MAY 2017 15:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.15)  17 MAY 2017 13:28
 entering extended mode
 **./lab_9.tex
 (lab_9.tex
@@ -6,8 +6,8 @@ LaTeX2e <2017/01/01> patch level 1
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -1359,12 +1359,12 @@ enefit from \pgfplotsset{compat=1.14} (current compat level: 1.13).
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=50.0pt
+* \marginparwidth=35.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1376,14 +1376,14 @@ enefit from \pgfplotsset{compat=1.14} (current compat level: 1.13).
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 54.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 55.
 
 LaTeX Font Warning: Font shape `T2A/cmr/m/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 57.
+(Font)              size <20.74> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `T2A/cmr/bx/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 57.
+(Font)              size <20.74> substituted on input line 58.
 
 [1
 
@@ -1395,70 +1395,70 @@ PGFPlots: reading {data/data1.txt}
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2]
-Package pgfplots info on input line 168: Using 'lua backend=false' for axis: xm
+Package pgfplots info on input line 169: Using 'lua backend=false' for axis: xm
 ode=log unsupported (yet).
 PGFPlots: reading {data/data1.txt}
-Package pgfplots info on input line 184: Using 'lua backend=false' for axis: xm
+Package pgfplots info on input line 185: Using 'lua backend=false' for axis: xm
 ode=log unsupported (yet).
 PGFPlots: reading {data/data1.txt}
 
-Overfull \hbox (2.42162pt too wide) in paragraph at lines 156--190
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 157--191
 []$[]$ $[]$ 
  []
 
 PGFPlots: reading {data/data1.txt}
 PGFPlots: reading {data/data1.txt}
 
-Overfull \hbox (2.42162pt too wide) in paragraph at lines 193--219
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 194--220
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3] [4]
+[3] [4] [5]
 PGFPlots: reading {data/data2.txt}
- [5]
-Package pgfplots info on input line 273: Using 'lua backend=false' for axis: xm
+ [6]
+Package pgfplots info on input line 274: Using 'lua backend=false' for axis: xm
 ode=log unsupported (yet).
 PGFPlots: reading {data/data2.txt}
-Package pgfplots info on input line 288: Using 'lua backend=false' for axis: xm
+Package pgfplots info on input line 289: Using 'lua backend=false' for axis: xm
 ode=log unsupported (yet).
 PGFPlots: reading {data/data2.txt}
 
-Overfull \hbox (2.42162pt too wide) in paragraph at lines 263--294
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 264--295
 []$[]$ $[]$ 
  []
 
 PGFPlots: reading {data/data2.txt}
 PGFPlots: reading {data/data2.txt}
 
-Overfull \hbox (2.42162pt too wide) in paragraph at lines 297--323
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 298--324
 []$[]$ $[]$ 
  []
 
-[6] [7]
+[7] [8]
 PGFPlots: reading {data/data3.txt}
- [8]
-Package pgfplots info on input line 376: Using 'lua backend=false' for axis: xm
+ [9]
+Package pgfplots info on input line 377: Using 'lua backend=false' for axis: xm
 ode=log unsupported (yet).
 PGFPlots: reading {data/data3.txt}
-Package pgfplots info on input line 391: Using 'lua backend=false' for axis: xm
+Package pgfplots info on input line 392: Using 'lua backend=false' for axis: xm
 ode=log unsupported (yet).
 PGFPlots: reading {data/data3.txt}
 
-Overfull \hbox (2.42162pt too wide) in paragraph at lines 366--397
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 367--398
 []$[]$ $[]$ 
  []
 
 PGFPlots: reading {data/data3.txt}
 PGFPlots: reading {data/data3.txt}
 
-Overfull \hbox (2.42162pt too wide) in paragraph at lines 400--426
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 401--427
 []$[]$ $[]$ 
  []
 
-[9] [10] (lab_9.aux)
+[10] [11] (lab_9.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.74pt have occurred.
@@ -1468,33 +1468,34 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26842 strings out of 493333
- 664854 string characters out of 3139183
- 872306 words of memory out of 3000000
- 29876 multiletter control sequences out of 15000+200000
- 21074 words of font info for 53 fonts, out of 3000000 for 9000
+ 26844 strings out of 493333
+ 664859 string characters out of 3139183
+ 872286 words of memory out of 3000000
+ 29877 multiletter control sequences out of 15000+200000
+ 21893 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,104p,871b,2169s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\
-dpi600\larm1000.pk> <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\lh\lh-t2a\dpi600\labx1440.pk> <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\lh\lh-t2a\dpi600\larm0800.pk> <C:\Users\Huy Hung\AppData\Local\MiKT
-eX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1095.pk> <C:\Users\Huy Hung\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx2074.pk> <C:\Users\Huy H
-ung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1440.pk> <C:\
-Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm07
-00.pk> <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dp
-i600\labx1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-bx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb>
-Output written on lab_9.pdf (11 pages, 223258 bytes).
+ <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600
+\larm1095.pk> <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh
+-t2a\dpi600\labx1440.pk> <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\l
+jfour\lh\lh-t2a\dpi600\labx1728.pk> <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9
+\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0800.pk> <C:\Users\Huy Hung\AppData\Local
+\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1200.pk> <C:\Users\Huy Hung\Ap
+pData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx2074.pk> <C:\Users\
+Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1440.pk>
+ <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\l
+arm0700.pk> <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t
+2a\dpi600\labx1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi1
+2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb>
+Output written on lab_9.pdf (12 pages, 226789 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
+ 378 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
