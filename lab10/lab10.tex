@@ -287,7 +287,7 @@
 \begin{center}
 \section{Исследование влияния момента сопротивленя $M_\text{СМ}$}
 \end{center}
-\par На рисунке 5 представлены переходные процессы ДПТ при различных значениях нагрузочного момента $M_\text{СМ}$.
+\par Ниже предсавлены графки переходных процессов ДПТ при различных значениях нагрузочного момента $M_\text{СМ}$.
 
 
 \begin{figure}[h!]
@@ -302,15 +302,11 @@
                 grid = major,
                 grid style = {dashed},
                 xmin = 0, xmax = 0.6,
-                extra y ticks={0, 10.04, 7.72, 5.4, 3.09},
+                extra y ticks={0, 10.04, 5},
                 extra y tick style={grid style={black, thick, dashed}},
                 ytick = {0, 2},
             ]
                 \addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w1] {data/FullModel/Moment-w.dat};
-                \addplot[blue, mark = none, thick, smooth, dashed] table [x = t, y = w2] {data/FullModel/Moment-w.dat};
-                \addplot[blue, mark = none, thick, smooth, dotted] table [x = t, y = w3] {data/FullModel/Moment-w.dat};
-                \addplot[blue, mark = none, thick, smooth, densely dashed] table [x = t, y = w4] {data/FullModel/Moment-w.dat};
-                \legend{$M_{cm} = 0$, $M_{cm} = 3$, $M_{cm} = 6$, $M_{cm} = 9$};
             \end{axis}
         \end{tikzpicture}
     \end{subfigure}
@@ -325,15 +321,12 @@
                 grid = major,
                 grid style = {dashed},
                 xmin = 0, xmax = 0.6,
-                extra y ticks={0, 2.78, 5.56, 8.34, 10},
+                extra y ticks={0, 5, 10},
                 extra y tick style={grid style={black, thick, dashed}},
                 ytick = {4},
             ]
                 \addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I1] {data/FullModel/Moment-I.dat};
-                \addplot[blue, mark = none, thick, smooth, dashed] table [x = t, y = I2] {data/FullModel/Moment-I.dat};
-                \addplot[blue, mark = none, thick, smooth, dotted] table [x = t, y = I3] {data/FullModel/Moment-I.dat};
-                \addplot[blue, mark = none, thick, smooth, densely dashed] table [x = t, y = I4] {data/FullModel/Moment-I.dat};
-                \legend{$M_{cm} = 0$, $M_{cm} = 3$, $M_{cm} = 6$, $M_{cm} = 9$};
+               
             \end{axis}
         \end{tikzpicture}
     \end{subfigure}
@@ -352,10 +345,7 @@
                 xmin = 0, xmax = 0.6,
             ]
                 \addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha1] {data/FullModel/Moment-alpha.dat};
-                \addplot[blue, mark = none, thick, smooth, dashed] table [x = t, y = alpha2] {data/FullModel/Moment-alpha.dat};
-                \addplot[blue, mark = none, thick, smooth, dotted] table [x = t, y = alpha3] {data/FullModel/Moment-alpha.dat};
-                \addplot[blue, mark = none, thick, smooth, densely dashed] table [x = t, y = alpha4] {data/FullModel/Moment-alpha.dat};
-                \legend{$M_{cm} = 0$, $M_{cm} = 3$, $M_{cm} = 6$, $M_{cm} = 9$};
+                
             \end{axis}
         \end{tikzpicture}
     \end{subfigure}
@@ -376,9 +366,258 @@
             \end{axis}
         \end{tikzpicture}
     \end{subfigure}
-    \caption{Графики прехеходных процессов при различных $M_\text{СМ}$}
+    \caption{Графики прехеходных процессов при  $M_\text{СМ}$ = 0}
 \end{figure}
 
+\newpage
+\begin{figure}[h!]
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\omega$, 1/c},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={0, 10, 7.72, 5},
+		extra y tick style={grid style={black, thick, dashed}},
+		ytick = {0, 2},
+		]
+	
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w2] {data/FullModel/Moment-w.dat};
+	
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$I$, A},
+		xlabel = {$t$, c},
+		legend pos=north east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={0, 2.78, 5,  10},
+		extra y tick style={grid style={black, thick, dashed}},
+		ytick = {4},
+		]
+	
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I2] {data/FullModel/Moment-I.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\vspace{0.5cm}
+	
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\alpha_M$, \text{градусы}},
+		xlabel = {$t$, c},
+		legend pos=north west,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha2] {data/FullModel/Moment-alpha.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$U$, B},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.3,
+		]
+		
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/Moment-U.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{Графики прехеходных процессов при различных $M_\text{СМ}$ = 3[Нм]}
+\end{figure}
+\newpage
+\begin{figure}[h!]
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\omega$, 1/c},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={0, 10,  5.4},
+		extra y tick style={grid style={black, thick, dashed}},
+		ytick = {0, 2},
+		]
+	
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w3] {data/FullModel/Moment-w.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$I$, A},
+		xlabel = {$t$, c},
+		legend pos=north east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={0, 5.56, 10},
+		extra y tick style={grid style={black, thick, dashed}},
+		ytick = {4},
+		]
+	
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I3] {data/FullModel/Moment-I.dat};
+	
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\vspace{0.5cm}
+	
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\alpha_M$, \text{градусы}},
+		xlabel = {$t$, c},
+		legend pos=north west,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+	
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha3] {data/FullModel/Moment-alpha.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$U$, B},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.3,
+		]
+		
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/Moment-U.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{Графики прехеходных процессов при различных $M_\text{СМ}$ = 6[Нм]}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\omega$, 1/c},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={0, 2, 3.09},
+		extra y tick style={grid style={black, thick, dashed}},
+		ytick = {0, 2},
+		]
+		
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w4] {data/FullModel/Moment-w.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$I$, A},
+		xlabel = {$t$, c},
+		legend pos=north east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={0, 5, 8.34, 10},
+		extra y tick style={grid style={black, thick, dashed}},
+		]
+		
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I4] {data/FullModel/Moment-I.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\vspace{0.5cm}
+	
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\alpha_M$, \text{градусы}},
+		xlabel = {$t$, c},
+		legend pos=north west,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha4] {data/FullModel/Moment-alpha.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$U$, B},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.3,
+		]
+		
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/Moment-U.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{Графики прехеходных процессов при различных $M_\text{СМ}$ = 9[Нм]}
+\end{figure}
+\newpage
 В ходе эксперимента, изменяя нагрузочный момент, мы получили различные значения времени переходного процесса и установившиеся значения тока и угловой скорости, которые представлены в таблице ниже.
 
 \begin{table}[h!]
@@ -398,11 +637,9 @@
 
 \newpage
 \begin{center}
-	
-
 \section{Исследование влеяния момента инерции нагрузки $J_\text{М}$}
 \end{center}
-\par На рисунке 5 представлены графики переходных процессов при различных значениях момента инерции нагрузки $J_\text{М}$.
+\par Ниже предсавлены графки переходных процессов при различных значениях момента инерции нагрузки $J_\text{М}$.
 
 \begin{figure}[h!]
     \begin{subfigure}{0.5\textwidth}
@@ -418,10 +655,7 @@
                 xmin = 0, xmax = 0.6,
             ]
                 \addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w1] {data/FullModel/InertiaMoment-w.dat};
-                \addplot[blue, mark = none, thick, smooth, dashed] table [x = t, y = w2] {data/FullModel/InertiaMoment-w.dat};
-                \addplot[blue, mark = none, thick, smooth, dotted] table [x = t, y = w3] {data/FullModel/InertiaMoment-w.dat};
-                \addplot[blue, mark = none, thick, smooth, densely dashed] table [x = t, y = w4] {data/FullModel/InertiaMoment-w.dat};
-                \legend{$J_{M} = 0.025$, $J_{M} = 0.05$, $J_{M} = 0.075$, $J_{M} = 0.01$};
+                
             \end{axis}
         \end{tikzpicture}
     \end{subfigure}
@@ -438,11 +672,7 @@
                 xmin = 0, xmax = 0.6,
             ]
                 \addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I1] {data/FullModel/InertiaMoment-I.dat};
-                \addplot[blue, mark = none, thick, smooth, dashed] table [x = t, y = I2] {data/FullModel/InertiaMoment-I.dat};
-                \addplot[blue, mark = none, thick, smooth, dotted] table [x = t, y = I3] {data/FullModel/InertiaMoment-I.dat};
-                \addplot[blue, mark = none, thick, smooth, densely dashed] table [x = t, y = I4] {data/FullModel/InertiaMoment-I.dat};
-               
-                \legend{$J_{M} = 0.025$, $J_{M} = 0.05$, $J_{M} = 0.075$, $J_{M} = 0.01$};
+                
             \end{axis}
         \end{tikzpicture}
     \end{subfigure}
@@ -461,11 +691,7 @@
                 xmin = 0, xmax = 0.6,
             ]
                 \addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha1] {data/FullModel/InertiaMoment-alpha.dat};
-                \addplot[blue, mark = none, thick, smooth, dashed] table [x = t, y = alpha2] {data/FullModel/InertiaMoment-alpha.dat};
-                \addplot[blue, mark = none, thick, smooth, dotted] table [x = t, y = alpha3] {data/FullModel/InertiaMoment-alpha.dat};
-                \addplot[blue, mark = none, thick, smooth, densely dashed] table [x = t, y = alpha4] {data/FullModel/InertiaMoment-alpha.dat};
                 
-               \legend{$J_{M} = 0.025$, $J_{M} = 0.05$, $J_{M} = 0.075$, $J_{M} = 0.01$};
             \end{axis}
         \end{tikzpicture}
     \end{subfigure}
@@ -485,9 +711,238 @@
             \end{axis}
         \end{tikzpicture}
     \end{subfigure}
-    \caption{Графики прехеходных процессов при различных $J_\text{М}$}
+    \caption{Графики прехеходных процессов при  $J_\text{М}$ = 0.025[кг$\text{м}^2$]}
 \end{figure}
-
+\newpage
+\begin{figure}[h!]
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\omega$, 1/c},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w2] {data/FullModel/InertiaMoment-w.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$I$, A},
+		xlabel = {$t$, c},
+		legend pos=north east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I2] {data/FullModel/InertiaMoment-I.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\vspace{0.5cm}
+	
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\alpha_M$, \text{градусы}},
+		xlabel = {$t$, c},
+		legend pos=north west,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha2] {data/FullModel/InertiaMoment-alpha.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$U$, B},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/InertiaMoment-U.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{Графики прехеходных процессов при $J_\text{М}$ = 0.05[кг$\cdot\text{м}^2$]}
+\end{figure}
+\newpage
+\begin{figure}[h!]
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\omega$, 1/c},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+	
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w3] {data/FullModel/InertiaMoment-w.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$I$, A},
+		xlabel = {$t$, c},
+		legend pos=north east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+	
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I3] {data/FullModel/InertiaMoment-I.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\vspace{0.5cm}
+	
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\alpha_M$, \text{градусы}},
+		xlabel = {$t$, c},
+		legend pos=north west,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+	
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha3] {data/FullModel/InertiaMoment-alpha.dat};
+		
+	
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$U$, B},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/InertiaMoment-U.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{Графики прехеходных процессов при $J_\text{М}$ = 0.075[кг$\cdot\text{м}^2$]}
+\end{figure}
+\newpage
+\begin{figure}[h!]
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\omega$, 1/c},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+	
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w4] {data/FullModel/InertiaMoment-w.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$I$, A},
+		xlabel = {$t$, c},
+		legend pos=north east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I4] {data/FullModel/InertiaMoment-I.dat};
+		
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\vspace{0.5cm}
+	
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\alpha_M$, \text{градусы}},
+		xlabel = {$t$, c},
+		legend pos=north west,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+	
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha4] {data/FullModel/InertiaMoment-alpha.dat};
+		
+	
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$U$, B},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/InertiaMoment-U.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{Графики прехеходных процессов при  $J_\text{М}$ = 0.1[кг$\cdot\text{м}^2$]}
+\end{figure}
+\newpage
 В ходе эксперимента, изменяя момент инерции нагрузки, мы получили различные значения времени переходного процесса и установившиеся значения тока и угловой скорости, которые представлены в таблице ниже.
 
 \begin{table}[h!]
@@ -508,112 +963,312 @@
 \begin{center}
 \section{Исследование влияния передаточного отношения $i_p$ редукотора}
 \end{center}
-\par На рисунке 6 представлены графики преходных процессов при различных значениях передаточного отношения и нулевом моменте нагрузки $M_\text{СМ} = 0$.
+\par Ниже предсавлены графки переходных процессов при различных значениях передаточного отношения и нулевом моменте нагрузки $M_\text{СМ} = 0$.
 
 \begin{figure}[h!]
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \begin{tikzpicture} 
-            \begin{axis} [
-                width = 0.9\textwidth,
-                ylabel = {$\omega$, 1/c},
-                xlabel = {$t$, c},
-                legend pos=south east,
-                grid = major,
-                grid style = {dashed},
-                xmin = 0, xmax = 0.6,
-                extra y ticks={5},
-                extra tick style={grid=major},
-            ]
-                \addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w1] {data/FullModel/GearRatio-w.dat};
-                \addplot[blue, mark = none, thick, smooth, dashed] table [x = t, y = w2] {data/FullModel/GearRatio-w.dat};
-                \addplot[blue, mark = none, thick, smooth, dotted] table [x = t, y = w3] {data/FullModel/GearRatio-w.dat};
-                \addplot[blue, mark = none, thick, smooth, densely dashed] table [x = t, y = w4] {data/FullModel/GearRatio-w.dat};
-               
-                \legend{$i_{p} = 15$, $i_{p} = 26.25$, $i_{p} = 37.5$, $i_{p} = 48.75$};
-            \end{axis}
-        \end{tikzpicture}
-    \end{subfigure}
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \begin{tikzpicture} 
-            \begin{axis} [
-                width = 0.9\textwidth,
-                ylabel = {$I$, A},
-                xlabel = {$t$, c},
-                legend pos=north east,
-                grid = major,
-                grid style = {dashed},
-                xmin = 0, xmax = 0.6,
-            ]
-                \addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I1] {data/FullModel/GearRatio-I.dat};
-                \addplot[blue, mark = none, thick, smooth, dashed] table [x = t, y = I2] {data/FullModel/GearRatio-I.dat};
-                \addplot[blue, mark = none, thick, smooth, dotted] table [x = t, y = I3] {data/FullModel/GearRatio-I.dat};
-                \addplot[blue, mark = none, thick, smooth, densely dashed] table [x = t, y = I4] {data/FullModel/GearRatio-I.dat};
-                
-                \legend{$i_{p} = 15$, $i_{p} = 26.25$, $i_{p} = 37.5$, $i_{p} = 48.75$};
-            \end{axis}
-        \end{tikzpicture}
-    \end{subfigure}
-    \vspace{0.5cm}
-
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \begin{tikzpicture} 
-            \begin{axis} [
-                width = 0.9\textwidth,
-                ylabel = {$\alpha_M$, \text{градусы}},
-                xlabel = {$t$, c},
-                legend pos=north west,
-                grid = major,
-                grid style = {dashed},
-                xmin = 0, xmax = 0.6,
-            ]
-                \addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha1] {data/FullModel/GearRatio-alpha.dat};
-                \addplot[blue, mark = none, thick, smooth, dashed] table [x = t, y = alpha2] {data/FullModel/GearRatio-alpha.dat};
-                \addplot[blue, mark = none, thick, smooth, dotted] table [x = t, y = alpha3] {data/FullModel/GearRatio-alpha.dat};
-                \addplot[blue, mark = none, thick, smooth, densely dashed] table [x = t, y = alpha4] {data/FullModel/GearRatio-alpha.dat};
-               
-                \legend{$i_{p} = 15$, $i_{p} = 26.25$, $i_{p} = 37.5$, $i_{p} = 48.75$};
-            \end{axis}
-        \end{tikzpicture}
-    \end{subfigure}
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \begin{tikzpicture} 
-            \begin{axis} [
-                width = 0.9\textwidth,
-                ylabel = {$U$, B},
-                xlabel = {$t$, c},
-                legend pos=south east,
-                grid = major,
-                grid style = {dashed},
-                xmin = 0, xmax = 0.6,
-            ]
-                \addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/GearRatio-U.dat};
-            \end{axis}
-        \end{tikzpicture}
-    \end{subfigure}
-    \caption{Графики прехеходных процессов при различных $i_p$ и $M_\text{СМ} = 0$}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\omega$, 1/c},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={5},
+		extra tick style={grid=major},
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w1] {data/FullModel/GearRatio-w.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$I$, A},
+		xlabel = {$t$, c},
+		legend pos=north east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I1] {data/FullModel/GearRatio-I.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\vspace{0.5cm}
+	
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\alpha_M$, \text{градусы}},
+		xlabel = {$t$, c},
+		legend pos=north west,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha1] {data/FullModel/GearRatio-alpha.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$U$, B},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/GearRatio-U.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{Графики прехеходных процессов при $i_p$ = 15 }
 \end{figure}
-
+\newpage
+\begin{figure}[h!]
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\omega$, 1/c},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={5},
+		extra tick style={grid=major},
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w2] {data/FullModel/GearRatio-w.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$I$, A},
+		xlabel = {$t$, c},
+		legend pos=north east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I2] {data/FullModel/GearRatio-I.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\vspace{0.5cm}
+	
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\alpha_M$, \text{градусы}},
+		xlabel = {$t$, c},
+		legend pos=north west,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha2] {data/FullModel/GearRatio-alpha.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$U$, B},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/GearRatio-U.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{Графики прехеходных процессов при $i_p$ = 26.25}
+\end{figure}
+\newpage
+\begin{figure}[h!]
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\omega$, 1/c},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={5},
+		extra tick style={grid=major},
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w3] {data/FullModel/GearRatio-w.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$I$, A},
+		xlabel = {$t$, c},
+		legend pos=north east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I3] {data/FullModel/GearRatio-I.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\vspace{0.5cm}
+	
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\alpha_M$, \text{градусы}},
+		xlabel = {$t$, c},
+		legend pos=north west,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha3] {data/FullModel/GearRatio-alpha.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$U$, B},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/GearRatio-U.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{Графики прехеходных процессов при $i_p$ = 37.5}
+\end{figure}
+\newpage
+\begin{figure}[h!]
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\omega$, 1/c},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={5},
+		extra tick style={grid=major},
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w4] {data/FullModel/GearRatio-w.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$I$, A},
+		xlabel = {$t$, c},
+		legend pos=north east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I4] {data/FullModel/GearRatio-I.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\vspace{0.5cm}
+	
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\alpha_M$, \text{градусы}},
+		xlabel = {$t$, c},
+		legend pos=north west,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha4] {data/FullModel/GearRatio-alpha.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$U$, B},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/GearRatio-U.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{Графики прехеходных процессов при $i_p$ = 48.75}
+\end{figure}
 В ходе эксперимента, изменяя момент передаточное отношение редукторы, мы получили различные значения времени переходного процесса и установившиеся значения тока и угловой скорости, которые представлены в таблице ниже.
 
 \begin{table}[h]
 	\tabulinesep = 2mm
 	\centering
-    \begin{threeparttable}
-        \caption{Данные о перехоных процессах }
-        \pgfplotstabletypeset[
-            columns/t_p_w/.style = {column name = {$t_\text{п}$}},
-            columns/w/.style = {column name = {$\omega_y$}},
-            columns/t_p_I/.style = {column name = {$t_\text{п}$}},
-            columns/I/.style = {column name = {$I_y$}},
-            columns/i_p/.style = {column name = {$i_{p}$}}, ]{data/FullModel/GearRatio.dat}
-    \end{threeparttable}
+	\begin{threeparttable}
+		\caption{Данные о перехоных процессах }
+		\pgfplotstabletypeset[
+		columns/t_p_w/.style = {column name = {$t_\text{п}$}},
+		columns/w/.style = {column name = {$\omega_y$}},
+		columns/t_p_I/.style = {column name = {$t_\text{п}$}},
+		columns/I/.style = {column name = {$I_y$}},
+		columns/i_p/.style = {column name = {$i_{p}$}}, ]{data/FullModel/GearRatio.dat}
+	\end{threeparttable}
 \end{table}
 \newpage
-На рисунке 7 представлены графики преходных процессов при различных значениях передаточного отношения и не нулевом моменте нагрузки $M_\text{СМ} = M_\text{Н}i_p/2$, при $i_p = 15$.
+Ниже предсавлены графки переходных процессов при различных значениях передаточного отношения и не нулевом моменте нагрузки $M_\text{СМ} = M_\text{Н}i_p/2$, при $i_p = 15$.
 
 \begin{figure}[h!]
 	\begin{subfigure}{0.5\textwidth}
@@ -632,95 +1287,319 @@
 		ytick = {0, 5, 10},
 		]
 		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w1] {data/FullModel/GearRatioWithMoment-w.dat};
-		\addplot[blue, mark = none, thick, smooth, dashed] table [x = t, y = w2] {data/FullModel/GearRatioWithMoment-w.dat};
-		\addplot[blue, mark = none, thick, smooth, dotted] table [x = t, y = w3] {data/FullModel/GearRatioWithMoment-w.dat};
-		\addplot[blue, mark = none, thick, smooth, densely dashed] table [x = t, y = w4] {data/FullModel/GearRatioWithMoment-w.dat};
-		 \legend{$i_{p} = 15$, $i_{p} = 26.25$, $i_{p} = 37.5$, $i_{p} = 48.75$};
+		
 		\end{axis}
 		\end{tikzpicture}
-    \end{subfigure}
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \begin{tikzpicture} 
-            \begin{axis} [
-                width = 0.9\textwidth,
-                ylabel = {$I$, A},
-                xlabel = {$t$, c},
-                legend pos=north east,
-                grid = major,
-                grid style = {dashed},
-                xmin = 0, xmax = 0.6,
-                extra y ticks={4.17, 2.37, 1.28},
-                extra y tick style={grid style={black, thick, dashed}},
-                ytick = {0, 6, 10},
-            ]
-                \addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I1] {data/FullModel/GearRatioWithMoment-I.dat};
-                \addplot[blue, mark = none, thick, smooth, dashed] table [x = t, y = I2] {data/FullModel/GearRatioWithMoment-I.dat};
-                \addplot[blue, mark = none, thick, smooth, dotted] table [x = t, y = I3] {data/FullModel/GearRatioWithMoment-I.dat};
-                \addplot[blue, mark = none, thick, smooth, densely dashed] table [x = t, y = I4] {data/FullModel/GearRatioWithMoment-I.dat};
-               
-                 \legend{$i_{p} = 15$, $i_{p} = 26.25$, $i_{p} = 37.5$, $i_{p} = 48.75$};
-            \end{axis}
-        \end{tikzpicture}
-    \end{subfigure}
-    \vspace{0.5cm}
-
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \begin{tikzpicture} 
-            \begin{axis} [
-                width = 0.9\textwidth,
-                ylabel = {$\alpha_M$, \text{градусы}},
-                xlabel = {$t$, c},
-                legend pos=north west,
-                grid = major,
-                grid style = {dashed},
-                xmin = 0, xmax = 0.6,
-            ]
-                \addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha1] {data/FullModel/GearRatioWithMoment-alpha.dat};
-                \addplot[blue, mark = none, thick, smooth, dashed] table [x = t, y = alpha2] {data/FullModel/GearRatioWithMoment-alpha.dat};
-                \addplot[blue, mark = none, thick, smooth, dotted] table [x = t, y = alpha3] {data/FullModel/GearRatioWithMoment-alpha.dat};
-                \addplot[blue, mark = none, thick, smooth, densely dashed] table [x = t, y = alpha4] {data/FullModel/GearRatioWithMoment-alpha.dat};
-               
-                \legend{$i_{p} = 15$, $i_{p} = 26.25$, $i_{p} = 37.5$, $i_{p} = 48.75$};
-            \end{axis}
-        \end{tikzpicture}
-    \end{subfigure}
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \begin{tikzpicture} 
-            \begin{axis} [
-                width = 0.9\textwidth,
-                ylabel = {$U$, B},
-                xlabel = {$t$, c},
-                legend pos=south east,
-                grid = major,
-                grid style = {dashed},
-                xmin = 0, xmax = 0.6,
-            ]
-                \addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/GearRatioWithMoment-U.dat};
-            \end{axis}
-        \end{tikzpicture}
-    \end{subfigure}
-    \caption{Графики прехеходных процессов при различных $i_p$ и $M_\text{СМ} = M_\text{Н}i_p/2$}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$I$, A},
+		xlabel = {$t$, c},
+		legend pos=north east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={4.17, 10},
+		extra y tick style={grid style={black, thick, dashed}},
+		ytick = {0, 6, 10},
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I1] {data/FullModel/GearRatioWithMoment-I.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\vspace{0.5cm}
+	
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\alpha_M$, \text{градусы}},
+		xlabel = {$t$, c},
+		legend pos=north west,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha1] {data/FullModel/GearRatioWithMoment-alpha.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$U$, B},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/GearRatioWithMoment-U.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{Графики прехеходных процессов при $i_p$ = 15}
 \end{figure}
-
+\newpage
+\begin{figure}[h!]
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\omega$, 1/c},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={8.07},
+		extra y tick style={grid style={black, thick, dashed}},
+		ytick = {0, 5, 10},
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w2] {data/FullModel/GearRatioWithMoment-w.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$I$, A},
+		xlabel = {$t$, c},
+		legend pos=north east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={ 2.37},
+		extra y tick style={grid style={black, thick, dashed}},
+		ytick = {0, 6, 10},
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I2] {data/FullModel/GearRatioWithMoment-I.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\vspace{0.5cm}
+	
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\alpha_M$, \text{градусы}},
+		xlabel = {$t$, c},
+		legend pos=north west,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha2] {data/FullModel/GearRatioWithMoment-alpha.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$U$, B},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/GearRatioWithMoment-U.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{Графики прехеходных процессов при $i_p$ = 26.25}
+\end{figure}
+\newpage
+\begin{figure}[h!]
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\omega$, 1/c},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={8.66},
+		extra y tick style={grid style={black, thick, dashed}},
+		ytick = {0, 5, 10},
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w3] {data/FullModel/GearRatioWithMoment-w.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$I$, A},
+		xlabel = {$t$, c},
+		legend pos=north east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={1.66},
+		extra y tick style={grid style={black, thick, dashed}},
+		ytick = {0, 6, 10},
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I3] {data/FullModel/GearRatioWithMoment-I.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\vspace{0.5cm}
+	
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\alpha_M$, \text{градусы}},
+		xlabel = {$t$, c},
+		legend pos=north west,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha3] {data/FullModel/GearRatioWithMoment-alpha.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$U$, B},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/GearRatioWithMoment-U.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{Графики прехеходных процессов при $i_p$ = 37.5}
+\end{figure}
+\newpage
+\begin{figure}[h!]
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\omega$, 1/c},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={8.98},
+		extra y tick style={grid style={black, thick, dashed}},
+		ytick = {0, 5, 10},
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = w4] {data/FullModel/GearRatioWithMoment-w.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$I$, A},
+		xlabel = {$t$, c},
+		legend pos=north east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		extra y ticks={1.28},
+		extra y tick style={grid style={black, thick, dashed}},
+		ytick = {0, 6, 10},
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = I4] {data/FullModel/GearRatioWithMoment-I.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\vspace{0.5cm}
+	
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$\alpha_M$, \text{градусы}},
+		xlabel = {$t$, c},
+		legend pos=north west,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = alpha4] {data/FullModel/GearRatioWithMoment-alpha.dat};
+		
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\begin{tikzpicture} 
+		\begin{axis} [
+		width = 0.9\textwidth,
+		ylabel = {$U$, B},
+		xlabel = {$t$, c},
+		legend pos=south east,
+		grid = major,
+		grid style = {dashed},
+		xmin = 0, xmax = 0.6,
+		]
+		\addplot[blue, mark = none, thick, smooth, solid] table [x = t, y = U1] {data/FullModel/GearRatioWithMoment-U.dat};
+		\end{axis}
+		\end{tikzpicture}
+	\end{subfigure}
+	\caption{Графики прехеходных процессов при $i_p$ = 48.75}
+\end{figure}
 В ходе эксперимента, изменяя момент передаточное отношение редукторы, мы получили различные значения времени переходного процесса и установившиеся значения тока и угловой скорости, которые представлены в таблице ниже.
 
 \begin{table}[h!]
-   \tabulinesep = 2mm
-   \centering
-   \begin{threeparttable}
-        \caption{Данные о перехоных процессах }
-        \pgfplotstabletypeset[
-            columns/t_p_w/.style = {column name = {$t_\text{п}$}},
-            columns/w/.style = {column name = {$\omega_y$}},
-            columns/t_p_I/.style = {column name = {$t_\text{п}$}},
-            columns/I/.style = {column name = {$I_y$}},
-            columns/i_p/.style = {column name = {$i_{p}$}}, ]{data/FullModel/GearRatioWithMoment.dat}
-            \end{threeparttable}          
+	\tabulinesep = 2mm
+	\centering
+	\begin{threeparttable}
+		\caption{Данные о перехоных процессах }
+		\pgfplotstabletypeset[
+		columns/t_p_w/.style = {column name = {$t_\text{п}$}},
+		columns/w/.style = {column name = {$\omega_y$}},
+		columns/t_p_I/.style = {column name = {$t_\text{п}$}},
+		columns/I/.style = {column name = {$I_y$}},
+		columns/i_p/.style = {column name = {$i_{p}$}}, ]{data/FullModel/GearRatioWithMoment.dat}
+	\end{threeparttable}          
 \end{table}
-
 \newpage
 \begin{center}
 \section{Сравнение плоной и упрощенной модели ЭМО}
@@ -807,7 +1686,7 @@ T_M = \frac{RJ}{k_M k_e}=0.071
 
 \newpage
 \section*{\centering Выводы}
-Мы были исследованы математические модели электромеханического объекта. В ходе работы были построены графики переходных процессов, исследованы влияния параметров объекта на вид этих процессов. При увеличении момента нагрузки $M_\text{СМ}$: уменьшается установившаяся угловая скорость двигателя и время переходного процесса, при этом увеличивается установившийся ток. При увеличении момента инерции нагрйзки: увеличивается время переходного процесса и максимальный ток. \par
+В данной работе мы исследовали модель ДПТ. При увеличении момента нагрузки $M_\text{СМ}$: уменьшается установившаяся угловая скорость двигателя и время переходного процесса, при этом увеличивается установившийся ток. При увеличении момента инерции нагрйзки: увеличивается время переходного процесса и максимальный ток. \par
 При увеличении передаточного числа редуктора, уменьшается влияние момента инерции нагрузки и соответственно уменьшается время переходного процесса. Также уменьшается угловая скорость на выходе редуктора. \par
 При увеличении передаточного числа редуктора увеличивается установившаяся угловая скорость (уменьшается ошибка) двигателя и уменьшается на выходе редуктора. Также уменьшается установившийся ток. \par
 При сравнении графиков полной и упрощенной модели ЭМО,при уменьшении $T_\text{я}$ и $T_\text{у}$ уменьшается ошибка и график перехоная характеристика полной модели стремится к упрощенной. \par

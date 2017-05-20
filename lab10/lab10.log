@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.15)  19 MAY 2017 01:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.15)  20 MAY 2017 16:16
 entering extended mode
 **./lab10.tex
 (lab10.tex
@@ -1393,84 +1393,187 @@ PGFPlots: reading {data/FullModel/TransPlot.dat}
 Missing character: There is no ; in font nullfont!
  [4 <./images/FullModel/full-model.pdf>]
 PGFPlots: reading {data/FullModel/Moment-w.dat}
-PGFPlots: reading {data/FullModel/Moment-w.dat}
-PGFPlots: reading {data/FullModel/Moment-w.dat}
-PGFPlots: reading {data/FullModel/Moment-w.dat}
-Missing character: There is no ; in font nullfont!
 PGFPlots: reading {data/FullModel/Moment-I.dat}
-PGFPlots: reading {data/FullModel/Moment-I.dat}
-PGFPlots: reading {data/FullModel/Moment-I.dat}
-PGFPlots: reading {data/FullModel/Moment-I.dat}
-Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 294--341
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 294--334
 []$[]$ $[]$
  []
 
 PGFPlots: reading {data/FullModel/Moment-alpha.dat}
-PGFPlots: reading {data/FullModel/Moment-alpha.dat}
-PGFPlots: reading {data/FullModel/Moment-alpha.dat}
-PGFPlots: reading {data/FullModel/Moment-alpha.dat}
-Missing character: There is no ; in font nullfont!
 PGFPlots: reading {data/FullModel/Moment-U.dat}
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 342--379
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 335--369
 []$[]$ $[]$ 
  []
 
-PGFPlots: reading {data/FullModel/Moment.dat}
 [5]
-PGFPlots: reading {data/FullModel/InertiaMoment-w.dat}
-PGFPlots: reading {data/FullModel/InertiaMoment-w.dat}
-PGFPlots: reading {data/FullModel/InertiaMoment-w.dat}
-PGFPlots: reading {data/FullModel/InertiaMoment-w.dat}
-Missing character: There is no ; in font nullfont!
-PGFPlots: reading {data/FullModel/InertiaMoment-I.dat}
-PGFPlots: reading {data/FullModel/InertiaMoment-I.dat}
-PGFPlots: reading {data/FullModel/InertiaMoment-I.dat}
-PGFPlots: reading {data/FullModel/InertiaMoment-I.dat}
-Missing character: There is no ; in font nullfont!
+PGFPlots: reading {data/FullModel/Moment-w.dat}
+PGFPlots: reading {data/FullModel/Moment-I.dat}
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 408--450
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 374--417
+[]$[]$ $[]$
+ []
+
+PGFPlots: reading {data/FullModel/Moment-alpha.dat}
+PGFPlots: reading {data/FullModel/Moment-U.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 418--453
+[]$[]$ $[]$ 
+ []
+
+[6]
+PGFPlots: reading {data/FullModel/Moment-w.dat}
+PGFPlots: reading {data/FullModel/Moment-I.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 457--500
+[]$[]$ $[]$
+ []
+
+PGFPlots: reading {data/FullModel/Moment-alpha.dat}
+PGFPlots: reading {data/FullModel/Moment-U.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 501--536
+[]$[]$ $[]$ 
+ []
+
+PGFPlots: reading {data/FullModel/Moment-w.dat}
+PGFPlots: reading {data/FullModel/Moment-I.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 540--582
+[]$[]$ $[]$
+ []
+
+PGFPlots: reading {data/FullModel/Moment-alpha.dat}
+PGFPlots: reading {data/FullModel/Moment-U.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 583--618
+[]$[]$ $[]$ 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7]
+PGFPlots: reading {data/FullModel/Moment.dat}
+ [8]
+PGFPlots: reading {data/FullModel/InertiaMoment-w.dat}
+PGFPlots: reading {data/FullModel/InertiaMoment-I.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 645--680
 []$[]$ $[]$
  []
 
 PGFPlots: reading {data/FullModel/InertiaMoment-alpha.dat}
-PGFPlots: reading {data/FullModel/InertiaMoment-alpha.dat}
-PGFPlots: reading {data/FullModel/InertiaMoment-alpha.dat}
-PGFPlots: reading {data/FullModel/InertiaMoment-alpha.dat}
-Missing character: There is no ; in font nullfont!
 PGFPlots: reading {data/FullModel/InertiaMoment-U.dat}
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 451--488
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 681--714
 []$[]$ $[]$ 
  []
 
-PGFPlots: reading {data/FullModel/InertiaMoment.dat}
-[6]
-PGFPlots: reading {data/FullModel/GearRatio-w.dat}
-PGFPlots: reading {data/FullModel/GearRatio-w.dat}
-PGFPlots: reading {data/FullModel/GearRatio-w.dat}
-PGFPlots: reading {data/FullModel/GearRatio-w.dat}
-Missing character: There is no ; in font nullfont!
-PGFPlots: reading {data/FullModel/GearRatio-I.dat}
-PGFPlots: reading {data/FullModel/GearRatio-I.dat}
-PGFPlots: reading {data/FullModel/GearRatio-I.dat}
-PGFPlots: reading {data/FullModel/GearRatio-I.dat}
-Missing character: There is no ; in font nullfont!
+[9]
+PGFPlots: reading {data/FullModel/InertiaMoment-w.dat}
+PGFPlots: reading {data/FullModel/InertiaMoment-I.dat}
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 514--559
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 718--753
+[]$[]$ $[]$
+ []
+
+PGFPlots: reading {data/FullModel/InertiaMoment-alpha.dat}
+PGFPlots: reading {data/FullModel/InertiaMoment-U.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 754--788
+[]$[]$ $[]$ 
+ []
+
+[10]
+PGFPlots: reading {data/FullModel/InertiaMoment-w.dat}
+PGFPlots: reading {data/FullModel/InertiaMoment-I.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 792--829
+[]$[]$ $[]$
+ []
+
+PGFPlots: reading {data/FullModel/InertiaMoment-alpha.dat}
+PGFPlots: reading {data/FullModel/InertiaMoment-U.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 830--865
+[]$[]$ $[]$ 
+ []
+
+[11]
+PGFPlots: reading {data/FullModel/InertiaMoment-w.dat}
+PGFPlots: reading {data/FullModel/InertiaMoment-I.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 869--907
+[]$[]$ $[]$
+ []
+
+PGFPlots: reading {data/FullModel/InertiaMoment-alpha.dat}
+PGFPlots: reading {data/FullModel/InertiaMoment-U.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 908--943
+[]$[]$ $[]$ 
+ []
+
+[12]
+PGFPlots: reading {data/FullModel/InertiaMoment.dat}
+ [13]
+PGFPlots: reading {data/FullModel/GearRatio-w.dat}
+PGFPlots: reading {data/FullModel/GearRatio-I.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 969--1004
 []$[]$ $[]$
  []
 
 PGFPlots: reading {data/FullModel/GearRatio-alpha.dat}
-PGFPlots: reading {data/FullModel/GearRatio-alpha.dat}
-PGFPlots: reading {data/FullModel/GearRatio-alpha.dat}
-PGFPlots: reading {data/FullModel/GearRatio-alpha.dat}
-Missing character: There is no ; in font nullfont!
 PGFPlots: reading {data/FullModel/GearRatio-U.dat}
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 560--597
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 1005--1037
+[]$[]$ $[]$ 
+ []
+
+[14]
+PGFPlots: reading {data/FullModel/GearRatio-w.dat}
+PGFPlots: reading {data/FullModel/GearRatio-I.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 1041--1076
+[]$[]$ $[]$
+ []
+
+PGFPlots: reading {data/FullModel/GearRatio-alpha.dat}
+PGFPlots: reading {data/FullModel/GearRatio-U.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 1077--1109
+[]$[]$ $[]$ 
+ []
+
+[15]
+PGFPlots: reading {data/FullModel/GearRatio-w.dat}
+PGFPlots: reading {data/FullModel/GearRatio-I.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 1113--1148
+[]$[]$ $[]$
+ []
+
+PGFPlots: reading {data/FullModel/GearRatio-alpha.dat}
+PGFPlots: reading {data/FullModel/GearRatio-U.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 1149--1181
+[]$[]$ $[]$ 
+ []
+
+[16]
+PGFPlots: reading {data/FullModel/GearRatio-w.dat}
+PGFPlots: reading {data/FullModel/GearRatio-I.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 1185--1220
+[]$[]$ $[]$
+ []
+
+PGFPlots: reading {data/FullModel/GearRatio-alpha.dat}
+PGFPlots: reading {data/FullModel/GearRatio-U.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 1221--1253
 []$[]$ $[]$ 
  []
 
@@ -1478,75 +1581,102 @@ PGFPlots: reading {data/FullModel/GearRatio.dat}
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7]
+[17]
 PGFPlots: reading {data/FullModel/GearRatioWithMoment-w.dat}
-PGFPlots: reading {data/FullModel/GearRatioWithMoment-w.dat}
-PGFPlots: reading {data/FullModel/GearRatioWithMoment-w.dat}
-PGFPlots: reading {data/FullModel/GearRatioWithMoment-w.dat}
-Missing character: There is no ; in font nullfont!
 PGFPlots: reading {data/FullModel/GearRatioWithMoment-I.dat}
-PGFPlots: reading {data/FullModel/GearRatioWithMoment-I.dat}
-PGFPlots: reading {data/FullModel/GearRatioWithMoment-I.dat}
-PGFPlots: reading {data/FullModel/GearRatioWithMoment-I.dat}
-Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 619--667
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 1274--1315
 []$[]$ $[]$
  []
 
 PGFPlots: reading {data/FullModel/GearRatioWithMoment-alpha.dat}
-PGFPlots: reading {data/FullModel/GearRatioWithMoment-alpha.dat}
-PGFPlots: reading {data/FullModel/GearRatioWithMoment-alpha.dat}
-PGFPlots: reading {data/FullModel/GearRatioWithMoment-alpha.dat}
-Missing character: There is no ; in font nullfont!
 PGFPlots: reading {data/FullModel/GearRatioWithMoment-U.dat}
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 668--705
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 1316--1349
+[]$[]$ $[]$ 
+ []
+
+[18]
+PGFPlots: reading {data/FullModel/GearRatioWithMoment-w.dat}
+PGFPlots: reading {data/FullModel/GearRatioWithMoment-I.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 1353--1394
+[]$[]$ $[]$
+ []
+
+PGFPlots: reading {data/FullModel/GearRatioWithMoment-alpha.dat}
+PGFPlots: reading {data/FullModel/GearRatioWithMoment-U.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 1395--1428
+[]$[]$ $[]$ 
+ []
+
+[19]
+PGFPlots: reading {data/FullModel/GearRatioWithMoment-w.dat}
+PGFPlots: reading {data/FullModel/GearRatioWithMoment-I.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 1432--1473
+[]$[]$ $[]$
+ []
+
+PGFPlots: reading {data/FullModel/GearRatioWithMoment-alpha.dat}
+PGFPlots: reading {data/FullModel/GearRatioWithMoment-U.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 1474--1507
+[]$[]$ $[]$ 
+ []
+
+[20]
+PGFPlots: reading {data/FullModel/GearRatioWithMoment-w.dat}
+PGFPlots: reading {data/FullModel/GearRatioWithMoment-I.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 1511--1552
+[]$[]$ $[]$
+ []
+
+PGFPlots: reading {data/FullModel/GearRatioWithMoment-alpha.dat}
+PGFPlots: reading {data/FullModel/GearRatioWithMoment-U.dat}
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 1553--1586
 []$[]$ $[]$ 
  []
 
 PGFPlots: reading {data/FullModel/GearRatioWithMoment.dat}
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8] <images/EasyModel/easy-model.pdf, id=114, 662.475pt x 140.525pt>
+[21] <images/EasyModel/easy-model.pdf, id=155, 662.475pt x 140.525pt>
 File: images/EasyModel/easy-model.pdf Graphic file (type pdf)
 
 <use images/EasyModel/easy-model.pdf>
-Package pdftex.def Info: images/EasyModel/easy-model.pdf used on input line 732
-.
+Package pdftex.def Info: images/EasyModel/easy-model.pdf used on input line 161
+1.
 (pdftex.def)             Requested size: 338.58632pt x 71.82117pt.
 PGFPlots: reading {data/FullModel/TransPlot.dat}
 PGFPlots: reading {data/EasyModel/TransPlot.dat}
 Missing character: There is no ; in font nullfont!
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9 <./images/EasyModel/easy-model.pdf>]
+ [22 <./images/EasyModel/easy-model.pdf>]
 PGFPlots: reading {data/FullModel/TransPlotSwitchedTime.dat}
 PGFPlots: reading {data/EasyModel/TransPlotSwitchedTime.dat}
 Missing character: There is no ; in font nullfont!
- [10]
-Overfull \hbox (6.75378pt too wide) in paragraph at lines 811--811
+
+[23]
+Overfull \hbox (6.75378pt too wide) in paragraph at lines 1690--1690
 \T2A/cmr/m/n/12 инер-ции на-груз-ки и со-от-вет-ствен-но умень-ша-ет-ся вре-мя 
 пе-ре-ход-но-го про-цес-са. Так-же умень-
  []
 
-[11] (lab10.aux)
+[24] (lab10.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.74pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 27098 strings out of 493333
- 670657 string characters out of 3139183
- 1680817 words of memory out of 3000000
- 30090 multiletter control sequences out of 15000+200000
+ 27314 strings out of 493333
+ 674761 string characters out of 3139183
+ 1386758 words of memory out of 3000000
+ 30306 multiletter control sequences out of 15000+200000
  21095 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,21n,103p,1071b,2343s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,19n,103p,1071b,2197s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600
 \labx1000.pk> <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh
 -t2a\dpi600\larm0600.pk> <C:\Users\Huy Hung\AppData\Local\MiKTeX\2.9\fonts\pk\l
@@ -1568,9 +1698,9 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmsy8.pfb>
-Output written on lab10.pdf (12 pages, 1137316 bytes).
+Output written on lab10.pdf (25 pages, 1308311 bytes).
 PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
+ 561 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
